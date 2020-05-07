@@ -55,9 +55,9 @@ namespace CalculatorWeb.Controllers
                 }
                 else if (numberOneSquare > numberTwoSquare)
                 {
-                    //text = "The number " + numberOne + " with Square root " + numberOneSquare + " has a higher square root than the number " + numberTwo + " with square root " + numberTwoSquare;
+                    text = "The number " + numberOne + " with Square root " + numberOneSquare + " has a higher square root than the number " + numberTwo + " with square root " + numberTwoSquare;
                    
-                    text = ($"The number is {numberOne}");
+                   
                 }
                 else
                 {
