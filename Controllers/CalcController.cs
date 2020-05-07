@@ -18,10 +18,7 @@ namespace CalculatorWeb.Controllers
         [HttpPost]
         public ActionResult Add(string firstNumber, string secondNumber)
         {
-            // int numberOne =  int.Parse (firstNumber);
-            // int numberTwo = int.Parse (secondNumber);
-            // int result = numberOne + numberTwo;
-            // ViewBag.Result = result;
+          
             GetBiggerSquare(firstNumber, secondNumber);
             return View();
         }
@@ -35,7 +32,7 @@ namespace CalculatorWeb.Controllers
             String text = null;
             intResultTryParseOne = int.TryParse(firstNumber, out numberOne);
             intResultTryParseTwo = int.TryParse(secondNumber, out numberTwo);
-            //Console.WriteLine($"Your age is: {age}");
+            
             if (intResultTryParseOne == false || intResultTryParseTwo == false)
             {
                 text = "ERROR!... ONLY NUMBERS ARE EXPECTED";
