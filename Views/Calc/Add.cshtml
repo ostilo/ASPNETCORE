@@ -1,0 +1,27 @@
+@{
+    ViewData["Title"] = "Addition Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4"> The Additon Calculator</h1>
+</div>
+
+@{
+    if(@ViewBag.Result != null)
+        { 
+            <div>
+                <p> @ViewBag.Result</p>
+            </div>
+        }
+    }
+
+
+<div>
+
+    <form asp-controller="Calc" asp-action="Add" method="POST">
+        <input type="text" placeholder="Enter first number" name="firstNumber"/>
+        <input type="text" placeholder="Enter second number"  name="secondNumber"/>
+        <button type="submit">Submit</button>
+    </form>
+    
+</div>
